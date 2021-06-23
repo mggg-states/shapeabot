@@ -19,3 +19,10 @@ $GIT_AUTHOR_EMAIL
 $GIT_COMMITTER_NAME
 $GIT_COMMITTER_EMAIL
 ```
+
+Example usage:
+```
+python clone.py
+python run.py jobs/test-echo.sh test
+```
+
