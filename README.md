@@ -2,15 +2,15 @@
 
 To clone all the repos:
 ```
-python clone.py
+python shapeabot.py clone
 ```
 
 To run a bash job/script:
 ```
-python run.py [job_path] [pr_name]
+python shapeabot.py run [job_path] [pr_name]
 ```
 
-The following env vars are exposed:
+The following env vars are exposed to the executable $[job_path]$:
 ```
 $name
 $dir
@@ -22,7 +22,7 @@ $GIT_COMMITTER_EMAIL
 
 Example usage:
 ```
-python clone.py
-python run.py jobs/test-echo.sh test
+python shapeabot.py clone
+python shapeabot.py run jobs/test-echo.sh test
 ```
 
