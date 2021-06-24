@@ -24,5 +24,6 @@ Example usage:
 ```
 python shapeabot.py clone
 python shapeabot.py run jobs/test-echo.sh test
+python shapeabot.py push
 ```
 
