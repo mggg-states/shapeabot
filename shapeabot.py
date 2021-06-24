@@ -12,6 +12,9 @@ app = typer.Typer()
 def clone():
     repos = [x for x in list_repos() if x[0].endswith("-shapefiles")]
 
+    if not os.path.isdir("repos"):
+        os.mkdir("repos")
+
     for each_repo_name, each_repo_url in repos:
         subprocess.run(["git", "clone", each_repo_url], cwd="repos", env=env)
 

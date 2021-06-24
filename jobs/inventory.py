@@ -9,8 +9,11 @@ import json
 
 os.chdir(os.environ["dir"])
 
-with open("../../output/inventory.json") as f:
-    items = list(json.load(f))
+if os.path.isdir("../../output/inventory.json"):
+    with open("../../output/inventory.json") as f:
+        items = list(json.load(f))
+else:
+    items = []
 
 shapefiles = glob.glob("*.zip")
 for shapefile in shapefiles:
