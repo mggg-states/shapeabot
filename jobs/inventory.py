@@ -9,7 +9,7 @@ import json
 
 os.chdir(os.environ["dir"])
 
-if os.path.isdir("../../output/inventory.json"):
+if os.path.isfile("../../output/inventory.json"):
     with open("../../output/inventory.json") as f:
         items = list(json.load(f))
 else:
